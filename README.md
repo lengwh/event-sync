@@ -1,2 +1,53 @@
 # event-sync
 Dapp事件监测平台
+
+
+# 表设计
+- block_header
+    - id
+    - block_hash
+    - block_number
+    - block_timestamp
+    - parent_hash
+    - block_timestamp
+    - create_time
+    - update_time
+- contract_events
+    - id
+    - block_hash
+    - contract_address
+    - transaction_hash
+- deposit_tokens
+    - id
+    - block_number
+    - sender_address
+    - receiver_address
+    - amount
+    - token_address
+    - create_time
+    - update_time
+  
+- withdraw_tokens
+    - id
+    - block_number
+    - sender_address
+    - receiver_address
+    - amount
+    - token_address
+    - create_time
+    - update_time
+- grant_reward_tokens
+    - id
+    - block_number
+    - token_address
+    - amount
+    - receiver_address
+    - create_time
+    - update_time
+- withdraw_manager_update
+    - id
+    - block_number
+    - old_manager
+    - new_manager
+    - create_time
+    - update_time
